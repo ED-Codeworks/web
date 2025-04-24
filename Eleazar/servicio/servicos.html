@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zona Gamer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      color: #FFFFFF; /* Texto blanco */
+      font-family: system-ui, sans-serif; /* Fuente estándar del sistema */
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    header {
+      background-color: rgb(0, 0, 0);
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px #870ef8;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #0e4cf8b4;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.356);
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 0 10px #0400ff;
+    }
+
+    nav a {
+      color: #e100ff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f8640e;
+      text-shadow: 0 0 10px #ffffff00;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ae00ff; /* Títulos en morado */
+      text-shadow: 0 0 10px #230c49;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #FFFFFF; /* Texto en blanco */
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background-color: #000000; /* Botones negros */
+      color: #ffffff; /* Texto blanco */
+      border: none;
+      padding: 14px 30px;
+      margin-top: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #870ef8; /* Sombra morada */
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: #1a001f;
+      color: #ffffff;
+      box-shadow: 0 0 20px #e100ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.541);
+      color: #888;
+      font-size: 0.9rem;
+      border-top: 1px solid #a900f7;
+      margin-top: 60px;
+    }
+    .contenedor {
+      display: flex; /* Pone los elementos uno al lado del otro */
+      align-items: center; /* Alinea verticalmente al centro */
+      padding: 20px;
+    }
+
+    .contenedor img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px; /* Esquinas redondeadas (opcional) */
+      margin-right: 20px; /* Espacio entre imagen y texto */
+    }
+
+    .texto {
+      font-size: 18px;
+      color: #333;
+    }
+    .contenedor2 {
+      display: flex;
+      flex-direction: row-reverse; /* Invierte el orden: imagen a la derecha */
+      align-items: center;
+      padding: 20px;
+    }
+    .contenedor2 img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-left: 20px; /* Espacio ahora a la izquierda de la imagen */
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="vid/fondoi.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+
+  <header>
+    <img src="img/logo.jpg" alt="Logo" width="500" height="250">
+  </header>
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../servicio/servicos.html">Servicios</a>
+    <a href="nos.html">Sobre Nosotros</a>
+    <a href="../contac/contac.html">Contacto</a>
+  </nav>
+  <center><main>
+    <h2>Nuestros Servicios</h2>
+    <p>
+      Empresa encargada de la creacion y mantenimiento de app web, paginas web, juegos y mucho mas.
+    </p>
+    <p>
+      En Codeworks ofrecemos una amplia gama de servicios para satisfacer tus necesidades tecnológicas. Desde el desarrollo de aplicaciones web personalizadas hasta la creación de videojuegos innovadores, nuestro equipo está listo para llevar tus ideas a la realidad.
+    </p>
+    <div class="contenedor">
+        <img src="img/im1.jpeg" alt="Mi imagen">
+        <div class="texto">
+          <h2>Paginas web</h2>
+          <p>Nos dedicamos a desarrollar paginas web personalizadas para satisfacer las necesidades de nuestros clientes. Mejorando la experiencia de usuario y optimizando la navegación. Logrando asi que el sitio web sea dinamico y atractivo.</p>
+        </div>
+      </div>
+      <div class="contenedor2">
+        <img src="img/app.webp" alt="Mi imagen">
+        <div class="texto">
+          <h2>Aplicaciones web</h2>
+          <p>Las aplicaciones web sirven para automatisar tareas y mejorar la experiencia del usuario. Sirve para poder realizar ventas, gestionar inventarios y mucho mas.</p>
+        </div>
+      </div>
+      <div class="contenedor">
+        <img src="img/man.jpeg" alt="Mi imagen">
+        <div class="texto">
+          <h2>Mantenimineto y mejora de paginas</h2>
+          <p>Ofrecemos el servicio de mejorar el diseño y la funcionalidad de tu sitio web. Le podemos dar mejoras y optimizaciones para mejorar la experiencia del usuario.</p>
+        </div>
+      </div>
+  </main></center>
+  <footer>
+    © 2025 E&D. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
